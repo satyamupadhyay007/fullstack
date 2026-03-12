@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading{
+            color: red;
+            background-color: brown;
+            text-align: center;
+        }
+        #b1{
+            background-color:green;
+            color: white;
+            border-radius: 30px;
+        }
+        #b2{
+            background-color: rgb(228, 21, 21);
+            color: white;
+            border-radius: 30px;
+        }
+    </style>
+    <style src="8th.js"></style>
+</head>
+<body>
+    <h1 id="heading">Is java script is easy </script> </h1>
+    <button id="b1">yes </button>
+    <button id="b2">no</button>
+</body>
+<script>
+document.getElementById("b1").onclick = function(){
+    document.getElementById("heading").innerHTML = "yes java script is easy";
+}
+document.getElementById("b2").onclick = function(){
+    document.getElementById("heading").innerHTML = "no if you are not practice";
+}
+</script>
+</html>
