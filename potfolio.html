@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        .main{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: cornflowerblue;
+        }
+.sub1{
+    position: absolute;
+    top: 10vh;
+    left: 15vw;
+    width: 70vw;
+    height: 80vh;
+    background-color: turquoise;
+     border-radius: 80px 20px 80px 20px;
+}
+.sub2{
+    position: absolute;
+    top: 20vh;
+    left: 19vw;
+    width: 30vw;
+    height: 50vh;
+    background-color: rgb(113, 42, 193);
+    font-size: larger;
+   
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    border-radius: 80px 20px 80px 20px;
+}   
+.sub3{
+    
+    position: absolute;
+    top: 30vh;
+    right: 21vw;
+    width: 30vw;
+    height: 50vh;
+    background-color: rgb(113, 42, 193);
+    border-radius: 80px 20px 80px 20px;
+} 
+.sub3 img{
+    width: 95%;
+    height: 90%;
+    border:solid rgb(16, 16, 16) 5px;
+    border-radius: 80px 20px 80px 20px;
+    margin-left: 1%;
+    margin-top: 3%;
+}
+.sub2 button{
+    width: 180px;
+    height: 50px;
+    background-color: rgb(14, 14, 14);
+    font-size: large;
+    border-radius: 20px 5px 20px 5px;
+    color: aquamarine;
+    font-weight: bold;
+}
+span{
+    color: blue;
+}
+.sub4{
+    display: none;
+    position: absolute;
+    top: 30vh;
+    right: 20vw;
+    width: 30vw;
+    height: 50vh;
+    background-color: rgb(113, 42, 193);
+    border-radius: 80px 20px 80px 20px;
+} 
+.sub4 img{
+    width: 95%;
+    height: 90px;
+    border:solid aliceblue 3px;
+    border-radius: 80px 20px 80px 20px;
+    margin-left: 5%;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub1">
+
+        </div>
+<div class="sub2">
+    <br> <br> <br>
+<h1 id="head1">Satyam Upadhyay</h1>
+<h1 id="head2">Study in <span>GPD</span> </h1>
+<h1 id="head3">CSE Student </h1>
+<br>
+<button id="b1"onclick="changecontent()"> Explore </button>
+</div>
+
+<div class="sub3">
+<img src="https://e0.pxfuel.com/wallpapers/167/769/desktop-wallpaper-computer-science-engineering-network-engineer.jpg" alt="">
+</div>
+<div class="sub4">
+    <img src=" " alt="">
+</div>
+</div>
+</body>
+<script>
+function changecontent(){
+    document.getElementById("head1").innerHTML = "Fresher";
+    document.getElementById("head2").innerHTML = "Looking For Job";
+    document.getElementById("head3").innerHTML = "Aspiring Software Engineer";
+document.getElementsByClassName("sub3").style.display= "none";
+document.getElementsByClassName("sub4").style.display="block";
+}
+</script>
+</html>
