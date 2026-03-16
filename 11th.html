@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return submitForm()">
+        <label > Name</label><br>
+        <input type="text" id="username"> <br>
+        <span id="message1" style="color: brown; "></span> <br>
+        <label >Number</label><br>
+        <input type="number"id="number"><br>
+        <span style="color: brown;"id ="message2"></span> <br>
+    <input type="submit">
+    </form>
+</body>
+<script>
+    function submitForm() {
+    let username =document.getElementById("username").value;
+    let number =document.getElementById("number").value;
+    if (username== ""){
+        document.getElementById("message1").innerHTML="Kindly Enter The Name"; 
+        return false;
+    }
+    else{
+        document.getElementById("message1").innerHTML="";
+    }
+    if(number==isNaN){
+        document.getElementById("message2").innerHTML="Kindly Enter Valid Number"; 
+        return false;
+
+    }
+    else if(number==""){
+        document.getElementById("message2").innerHTML="Kindly Enter The Number"; 
+        return false;
+
+    }
+    if (number !=0){
+        document.getElementById("message2").innerHTML="Kindly Enter A Valid Number"; 
+        return false;
+
+    }
+    
+    alert("form is submitted")
+    return true;
+    }
+</script>
+</html>
